@@ -21,6 +21,7 @@ setState(true)
       >
         <div className="form">
           <input
+          value={city}
             onChange={(e) => setCity(e.target.value)}
             type="text"
             placeholder="Şəhər adını daxil edin"
