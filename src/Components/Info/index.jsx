@@ -1,21 +1,22 @@
 import React from "react";
 import { WiSunset } from "react-icons/wi";
 
-const info = ({ info }) => {
+const info = ({ info,state }) => {
     return (
   <div>
      {
-    info ?  <div className="info">
+    state ?  <div className="info">
     <p id="city"><br />
+    Şəhər,ölkə-
       {info.name}-{info.sys.country}</p>
     <div className="temp">
-      <p id="istilik">
+      <p id="istilik">İstilik-
        {info.main.temp} <WiSunset className="fa-c" />
       </p>
     </div>
-    <p id="havaProqnozu">{info.weather[0].description}</p>
+    <p id="havaProqnozu">Hava-{info.weather[0].description}</p>
     <div className="hissEdilen">
-      <p id="hissEdilen">
+      <p id="hissEdilen">Hiss edilən-
       {info.main.feels_like}<WiSunset className="fa-c" />
       </p>
     </div>

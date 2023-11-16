@@ -4,10 +4,10 @@ import React, { useState } from "react";
 const Form = ({setState,setInfo}) => {
   const [city, setCity] = useState("");
  
-  const handleChange = () => {
+  const handleChange = async () => {
     const api = "a8fe7fb9da95f0df9900e105e00d113a";
     const _URL = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${api}&units=metric&lang=az`;
-    axios.get(_URL).then(res=>setInfo(res.data));
+   await axios.get(_URL).then(res=>setInfo(res.data));
 setState(true)
   };
   return (

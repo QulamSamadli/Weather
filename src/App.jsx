@@ -9,7 +9,7 @@ function App() {
   return (
     <div>
       <Form  setInfo={setInfo} setState={setState} />
-      <Info info = {info}/>
+      <Info info = {info} state ={state} />
     </div>
   );
 }
