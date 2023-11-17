@@ -50,10 +50,11 @@ h1 {
 }
 
 ::placeholder {
-  color: black;
+  color: gray;
+  font-size: 30px;
 }
 
-.inputText {
+.InputText {
   margin-top: 10px;
   width: 600px;
   border: none;
