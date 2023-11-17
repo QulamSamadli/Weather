@@ -1,7 +1,7 @@
 import { useState } from "react";
 import Form from "./Components/Form";
 import Info from "./Components/Info";
-import './components/style.css'
+import './Components/style.css'
 
 function App() {
   const [info,setInfo] = useState([])
